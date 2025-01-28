@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Montsterrat;
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf');
+  }
+  
+  @font-face {
+    font-family: tegaki;
+    src: url('/fonts/tegaki.ttf');
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {    
+    font-family: Montsterrat;
+  }
+  
+  .teg {
+    font-family: tegaki;
+  }
+  
+  .title {  
+    padding: 150px 0;
+    text-align: center;
+  }
+  
+  .section-page2 {
+    margin: 0; 
+    height: 100vh;
+    background-image:  url('/image/dzubei.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .zag {
+    display: block;
+    font-size: 200px;
+    color: white;
+  
+    text-shadow: 20px 20px 40px  black;
+  
+    pointer-events: none; /* Отключает взаимодействие мышью */
+    user-select: none;    /* Отключает выделение текста */
+  }
+
+  
+  .zag-2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: antiquewhite;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Контейнер для карточек */
+
+.wrapper {
+  display: grid;
+  place-items: center; /* Центровка по горизонтали и вертикали */
+  height: 100vh; /* Высота 100% окна браузера */
+  width: 100%; /* Ширина 100% */
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 2; /* Размещаем выше фона */
+}
+
+/* Стили карточек */
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Анимация при наведении */
+}
+
+.menu-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 150px;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+.add-to-cart {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+  

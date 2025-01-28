@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Montsterrat;
+    src: url('/fonts/Montserrat-VariableFont_wght.ttf');
+  }
+  
+  @font-face {
+    font-family: tegaki;
+    src: url('/fonts/tegaki.ttf');
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {    
+    font-family: Montsterrat;
+  }
+  
+  .teg {
+    font-family: tegaki;
+  }
+  
+  .title {  
+    padding: 150px 0;
+    text-align: center;
+  }
+  
+  .section-page3 {
+    margin: 0; 
+    height: 100vh;
+    background-image:  url('/image/dzubei.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .zag {
+    display: block;
+    font-size: 200px;
+    color: white;
+  
+    text-shadow: 20px 20px 40px  black;
+  
+    pointer-events: none; /* Отключает взаимодействие мышью */
+    user-select: none;    /* Отключает выделение текста */
+  }
+
+  
+  .zag-2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: antiquewhite;
+  }
+  
