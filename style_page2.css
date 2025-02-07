@@ -130,4 +130,32 @@ body {
     color: #fff;
 }
 
-  
+/* Секция кнопок */
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1px; /* Отступ снизу от кнопок */
+}
+
+/* Стили кнопок */
+.menu-btn {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+  transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+

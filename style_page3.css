@@ -1,56 +1,117 @@
 @font-face {
-    font-family: Montsterrat;
-    src: url('/fonts/Montserrat-VariableFont_wght.ttf');
-  }
+  font-family: Montsterrat;
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: tegaki;
+  src: url('/fonts/tegaki.ttf');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {    
+  font-family: Montsterrat;
+  margin: 0; 
+  height: 100vh;
+  background-image:  url('/image/dzubei.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.teg {
+  font-family: tegaki;
+}
+
+.title {  
+  padding: 150px 0;
+  text-align: center;
+}
+
+.section-page3 {
+
+}
+
+.zag {
+  display: block;
+  font-size: 200px;
+  color: white;
   
-  @font-face {
-    font-family: tegaki;
-    src: url('/fonts/tegaki.ttf');
-  }
-  
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  
-  body {    
-    font-family: Montsterrat;
-  }
-  
-  .teg {
-    font-family: tegaki;
-  }
-  
-  .title {  
-    padding: 150px 0;
-    text-align: center;
-  }
-  
-  .section-page3 {
-    margin: 0; 
-    height: 100vh;
-    background-image:  url('/image/dzubei.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .zag {
-    display: block;
-    font-size: 200px;
-    color: white;
-  
-    text-shadow: 20px 20px 40px  black;
-  
-    pointer-events: none; /* Отключает взаимодействие мышью */
-    user-select: none;    /* Отключает выделение текста */
-  }
+  text-shadow: 20px 20px 40px  black;
+
+  pointer-events: none; /* Отключает взаимодействие мышью */
+  user-select: none;    /* Отключает выделение текста */
+}
+
+.restaurant-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.tab.active {
+  font-weight: bold;
+  color: #2a4d00; /* Зеленый оттенок */
+  border-bottom: 2px solid #2a4d00;
+}
+
+.tab:hover {
+  color: #2a4d00;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.info-block {
+  flex: 1;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.info-block h4 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.info-block p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 768px) { 
+     
+
 
   
-  .zag-2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: antiquewhite;
-  }
-  
+}

@@ -104,7 +104,7 @@ body {
 
 
 .zag-2 {
-  font-size: 2rem;
+  font-size: 50px;
   font-weight: bold;
   color: antiquewhite;
 }
@@ -214,7 +214,7 @@ body {
   }
 
   .section-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/image/dzubei.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.096), rgba(0, 0, 0, 0.856)), url('/image/dzubei.jpg');
     background-position: center;
     background-size: cover; /* Заполняем секцию на 100%, сохраняя пропорции */
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ body {
   
   .ramen-list {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856)), 
         url('/image/img_bg2.jpg');
     width: 100%;
     background-size: cover; /* Растягиваем фоновое изображение */
@@ -234,7 +234,7 @@ body {
   
   .sushi-list {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856)), 
         url('/image/img_bg3.jpg');
     width: 100%;
     background-size: cover; /* Растягиваем фоновое изображение */
@@ -245,7 +245,7 @@ body {
   
   .wok-list {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.856), rgba(0, 0, 0, 0.856)), 
         url('/image/img_bg4.jpg');
     width: 100%;
     background-size: cover; /* Растягиваем фоновое изображение */
