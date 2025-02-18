@@ -27,40 +27,66 @@
                     <li><a href="page4.html">Blog</a></li>
                 </ul>
             </nav>
-   
-    <div class="menu-bg" id="menu-bg"></div>
-    </div>
-    <div class="wrapper">
-            <div class="menu-buttons">
-                <button class="menu-btn">Рамэны</button>
-                <button class="menu-btn">Лапша</button>
-                <button class="menu-btn">Суши и роллы</button>
-                <button class="menu-btn">Донбури</button>
+
+            <div id="cart" class="cart">
+                <button class="cart-btn" onclick="toggleCart()">🛒</button>
+                <div id="cart-items" class="cart-items">
+                    <h3>Корзина</h3>
+                    <ul id="cart-list">
+                        <!-- Товары в корзине будут добавляться сюда через JS -->
+                    </ul>
+                    <button class="btn-checkout">Оформить заказ</button>
+                </div>
             </div>
-        <div class="menu-container">
-            <div class="menu-item">
-                <img class="menu-image" src="/image/RAM1.jpg" alt="Рамен со свининой">
-                <h3>Рамен со свининой</h3>
-                <p class="price">15.99 руб.</p>
-                <button class="add-to-cart">В корзину</button>
-            </div>
-            <div class="menu-item">
-                <img class="menu-image" src="/image/ramen-2.jpg" alt="Рамен с курицей">
-                <h3>Рамен с курицей</h3>
-                <p class="price">14.99 руб.</p>
-                <button class="add-to-cart">В корзину</button>
-            </div>
-            <div class="menu-item">
-                <img class="menu-image" src="/image/ramen-3.jpg" alt="Томатный рамен чили">
-                <h3>Томатный рамен чили</h3>
-                <p class="price">20.99 руб.</p>
-                <button class="add-to-cart">В корзину</button>
-            </div>
+        
+            <div class="menu-bg" id="menu-bg"></div>
         </div>
- </div>
+    
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <div class="wrapper">
+        <div class="menu-buttons">
+            <button class="menu-btn">Рамэны</button>
+            <button class="menu-btn">Лапша</button>
+            <button class="menu-btn">Суши и роллы</button>
+            <button class="menu-btn">Донбури</button>
+        </div>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img class="menu-image" src="/image/RAM1.jpg" alt="Рамен со свининой">
+            <h3>Рамен со свининой</h3>
+            <p class="price">15.99 руб.</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img class="menu-image" src="/image/ramen-2.jpg" alt="Рамен с курицей">
+            <h3>Рамен с курицей</h3>
+            <p class="price">14.99 руб.</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img class="menu-image" src="/image/ramen-3.jpg" alt="Томатный рамен чили">
+            <h3>Томатный рамен чили</h3>
+            <p class="price">20.99 руб.</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+<div class="cart">
+    <h2>Корзина</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Итого: 0 руб.</p>
+</div>
+<div class="cart">
+    <h2>Корзина</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Итого: 0 руб.</p>
 </div>
 </body>
     <script src="main.js"></script>
 </body>
 </html>
-

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style_page3.css">
     <link rel="stylesheet" href="nav-menu.css">
     <link rel="stylesheet" href="/text-animation.css">
-
+    
 </head>
 <body>
     <div class="section-page2">
@@ -27,6 +27,20 @@
                     <li><a href="page4.html">Blog</a></li>
                 </ul>
             </nav>
+
+            <div id="cart" class="cart">
+                <button class="cart-btn" onclick="toggleCart()">🛒</button>
+                <div id="cart-items" class="cart-items">
+                    <h3>Корзина</h3>
+                    <ul id="cart-list">
+                        <!-- Товары в корзине будут добавляться сюда через JS -->
+                    </ul>
+                    <button class="btn-checkout">Оформить заказ</button>
+                </div>
+            </div>
+        
+            <div class="menu-bg" id="menu-bg"></div>
+        </div>
    
     <div class="menu-bg" id="menu-bg"></div>
     </div>
@@ -52,8 +66,14 @@
           </div>
       </div>
   </div>
-
 </div>
+
+<div class="cart">
+    <h2>Корзина</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Итого: 0 руб.</p>
+</div>
+
 </body>
     <script src="main.js"></script>
 </body>
