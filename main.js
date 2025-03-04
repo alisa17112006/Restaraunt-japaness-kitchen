@@ -8,8 +8,8 @@ function toggleCart() {
     document.getElementById("cart").classList.toggle("open");
 }
 
-// Массив для хранения товаров в корзине
-let cart = [];
+// Загружаем корзину из localStorage (или создаем пустую)
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".add-to-cart");
@@ -23,20 +23,25 @@ document.addEventListener("DOMContentLoaded", function () {
             addToCart(name, price);
         });
     });
+
+    document.getElementById("checkout-btn").addEventListener("click", function () {
+        window.location.href = "/checkout.html"; // Переход на страницу оформления
+    });
+
+    updateCartUI(); // Обновляем корзину при загрузке страницы
 });
 
 // Функция добавления товара в корзину
 function addToCart(name, price) {
     cart.push({ name, price });
-
+    localStorage.setItem("cart", JSON.stringify(cart)); // Сохраняем корзину
     updateCartUI();
 }
 
-// Обновляем корзину на странице
+// Функция обновления UI корзины
 function updateCartUI() {
     const cartList = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
-
     cartList.innerHTML = ""; // Очищаем список
 
     let total = 0;
@@ -45,7 +50,8 @@ function updateCartUI() {
         total += item.price;
 
         const li = document.createElement("li");
-        li.innerHTML = `${item.name} - ${item.price} руб. <button onclick="removeFromCart(${index})">❌</button>`;
+        li.innerHTML = `${item.name} - ${item.price} руб. 
+            <button class="remove-btn" onclick="removeFromCart(${index})">❌</button>`;
         cartList.appendChild(li);
     });
 
@@ -55,18 +61,16 @@ function updateCartUI() {
 // Функция удаления товара из корзины
 function removeFromCart(index) {
     cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart)); // Обновляем корзину
     updateCartUI();
 }
 
+// Кнопка прокрутки вверх
 document.addEventListener("DOMContentLoaded", function () {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 300) {
-            scrollToTopBtn.style.display = "flex";
-        } else {
-            scrollToTopBtn.style.display = "none";
-        }
+        scrollToTopBtn.style.display = window.scrollY > 300 ? "flex" : "none";
     });
 
     scrollToTopBtn.addEventListener("click", function () {

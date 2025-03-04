@@ -37,13 +37,11 @@ body {
     background-repeat: no-repeat;
 }
 
-
-
-
-
 /* Контейнер для карточек */
 
 .wrapper {
+  margin-top: 70px;
+  margin-bottom: 10px;
   display: grid;
     place-items: center;
     height: 80%; /* Вычтите фиксированные отступы, если они есть */
@@ -104,8 +102,9 @@ body {
 }
 
 .add-to-cart {
-    background-color: #fff;
-    color: #333;
+    background-color: rgb(220, 5, 45);
+    font-weight: bold;
+    color: white;
     border: 2px solid #333;
     border-radius: 20px;
     padding: 10px;
@@ -122,30 +121,44 @@ body {
 /* Секция кнопок */
 .menu-buttons {
   display: flex;
+  flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку */
   justify-content: center;
   gap: 10px;
-  margin-bottom: 1px; /* Отступ снизу от кнопок */
+  margin-bottom: 15px; /* Отступ снизу */
+  padding: 10px;
 }
 
 /* Стили кнопок */
 .menu-btn {
-  background-color: #fff;
+  background-color: #fff; /* Белый фон */
+  text-decoration: none; /* Убираем подчеркивание */
   border: 2px solid #ddd;
+  color: black; /* Черный текст */
   border-radius: 20px;
   padding: 10px 20px;
   font-size: 14px;
   font-weight: bold;
-  color: #333;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.menu-btn a{
+  text-decoration: none;
+  color:black;
 }
 
+.menu-btn:hover a{
+  text-decoration: none;
+  color:white;
+}
+
+/* Эффект при наведении */
 .menu-btn:hover {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
-  transform: scale(1.05); /* Легкое увеличение при наведении */
+  background-color: black; /* Черный фон */
+  color: white; /* Белый текст */
+  border-color: black;
+  transform: scale(1.05); /* Легкое увеличение */
 }
 
 .cart {
@@ -157,6 +170,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 250px;
+  max-height: 400px; /* Ограничиваем высоту */
+  overflow-y: auto; /* Включаем прокрутку */
 }
 
 .cart ul {
@@ -178,4 +193,20 @@ body {
 
   }
 
+  .menu-buttons {
+    flex-direction: row; /* Кнопки будут в одну строку */
+    flex-wrap: wrap; /* Кнопки переносятся на новую строку при необходимости */
+    gap: 5px; /* Уменьшаем расстояние */
+  }
+
+  .menu-btn {
+    font-size: 12px; /* Делаем шрифт чуть меньше */
+    padding: 8px 15px; /* Уменьшаем отступы внутри кнопок */
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    grid-template-columns: 1fr; /* Одна карточка в ряд */
+  }
 }

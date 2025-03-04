@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Restaurant</title>
+    <link rel="stylesheet" href="style_menu.css">
+    <link rel="stylesheet" href="nav-menu.css">
+    <link rel="stylesheet" href="/text-animation.css">
+
+</head>
+<body>
+    <div class="section-page2">
+    
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div id="cart" class="cart">
+                <button class="cart-btn" onclick="toggleCart()">🛒</button>
+                <div class="cart-items">
+                    <h3>Корзина</h3>
+                    <ul id="cart-items">
+                        <!-- Товары в корзине будут добавляться сюда через JS -->
+                    </ul>
+                    <p id="cart-total">Итого: 0 руб.</p>
+                    <button id="checkout-btn" class="btn-checkout">Оформить заказ</button>
+                </div>
+            </div>
+            
+        
+            <div class="menu-bg" id="menu-bg"></div>
+        </div>
+    
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <div class="wrapper">
+        <div class="menu-buttons">
+            <button class="menu-btn"><a href="menu.html">Рамэны</a></button>
+            <button class="menu-btn"><a href="Wok.html">Wok</a></button>
+            <button class="menu-btn"><a href="Sushi.html">Суши и роллы</a></button>
+            <button class="menu-btn"><a href="Rice.html">Поке</a></button>
+        </div>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img class="menu-image" src="/image/RAM1.jpg" alt="Рамен со свининой">
+            <h3>Рамен со свининой</h3>
+            <p class="price">15.99 руб.</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img class="menu-image" src="/image/ramen-2.jpg" alt="Рамен с курицей">
+            <h3>Рамен с курицей</h3>
+            <p class="price">14.99 руб.</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="menu-item">
+            <img class="menu-image" src="/image/ramen-3.jpg" alt="Томатный рамен чили">
+            <h3>Томатный рамен чили</h3>
+            <p class="price">20.99 руб.</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+</body>
+    <script src="main.js"></script>
+</body>
+</html>

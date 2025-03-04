@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Restaurant</title>
+    <link rel="stylesheet" href="style_blog.css">
+    <link rel="stylesheet" href="nav-menu.css">
+    <link rel="stylesheet" href="/text-animation.css">
+
+</head>
+<body>
+    <div class="section-page4">
+    
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div id="cart" class="cart">
+                <button class="cart-btn" onclick="toggleCart()">🛒</button>
+                <div class="cart-items">
+                    <h3>Корзина</h3>
+                    <ul id="cart-items">
+                        <!-- Товары в корзине будут добавляться сюда через JS -->
+                    </ul>
+                    <p id="cart-total">Итого: 0 руб.</p>
+                    <button id="checkout-btn" class="btn-checkout">Оформить заказ</button>
+                </div>
+            </div>
+        
+            <div class="menu-bg" id="menu-bg"></div>
+        </div>
+</body>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+

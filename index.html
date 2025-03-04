@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML practics!</title>
+    <title>Japanese Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav-menu.css">
     <link rel="stylesheet" href="/text-animation.css">
@@ -21,10 +21,10 @@
         
             <nav class="nav" id="nav">
                 <ul>
-                    <li><a href="#"><a href="index.html">Home</a></a></li>
-                    <li><a href="#"><a href="page2.html">Menu</a></a></li>
-                    <li><a href="#"><a href="page3.html">Contact</a></a></li>
-                    <li><a href="#"><a href="page4.html">Blog</a></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         
@@ -36,9 +36,13 @@
                     <ul id="cart-list">
                         <!-- Товары в корзине будут добавляться сюда через JS -->
                     </ul>
-                    <button class="btn-checkout">Оформить заказ</button>
+                    <p id="cart-total">Итого: 0 руб.</p> <!-- Общая сумма -->
+                    <button id="checkout-btn" class="btn-checkout">Оформить заказ</button> <!-- Кнопка вне cart-list -->
                 </div>
             </div>
+            
+            
+            
         
             <div class="menu-bg" id="menu-bg"></div>
         </div>
@@ -61,7 +65,8 @@
         </div>
     </div>
 
-    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+    <button id="scrollToTopBtn" class="scroll-to-top">上</button>
+    
 
     <section class="ramen-list">
         <div class="title-ramen">
@@ -172,13 +177,6 @@
             </div>
         </div>
     </section>
-    <div class="cart">
-        <h2>Корзина</h2>
-        <ul id="cart-items"></ul>
-        <p id="cart-total">Итого: 0 руб.</p>
-    </div>
-    
-
     <script src="main.js"></script>
     <script src="card-animation.js"></script>
 </body>
